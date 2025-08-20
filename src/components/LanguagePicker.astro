@@ -1,13 +1,106 @@
 ---
+import { getLangFromUrl } from "@/i18n/utils";
 import { languages } from "../i18n/ui";
+import DrownArow from "../components/icons/DrownArrow.astro";
+import Language from "../components/icons/Language.astro";
+
+const languageFlags = {
+  en: "🇺🇸",
+  es: "🇪🇸",
+  pt: "🇧🇷",
+} as const;
+
+const currentLang = getLangFromUrl(Astro.url);
 ---
 
-<ul>
-  {
-    Object.entries(languages).map(([lang, label]) => (
-      <li>
-        <a href={`/${lang}/`}>{label}</a>
-      </li>
-    ))
+<div class="relative ml-1 mr-1">
+  <button
+    class="border-none hover:text-blue-500 dark:hover:text-blue-500 flex items-center"
+    id="languageToggle"
+    aria-expanded="false"
+  >
+    <Language />
+    <span class="ml-0.5 mr-2">{languages[currentLang]}</span>
+    <DrownArow />
+  </button>
+
+  <ul
+    class="absolute top-full right-0 mt-2 min-w-[140px] bg-slate-800/95 border border-white/10 rounded-xl py-2 opacity-0 invisible -translate-y-2 transition-all duration-200 backdrop-blur-xl z-50 shadow-xl shadow-black/40"
+    id="languageDropdown"
+  >
+    {
+      Object.entries(languages).map(([lang, label]) => (
+        <li>
+          <a
+            href={`/${lang}/`}
+            class="flex items-center gap-3 px-4 py-2.5 text-white text-sm font-medium hover:bg-white/8 hover:text-cyan-300 transition-all duration-200"
+          >
+            <span class="text-base w-5 flex justify-center">
+              {languageFlags[lang as keyof typeof languageFlags]}
+            </span>
+            <span class="flex-1">{label}</span>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</div>
+
+<script>
+  function initLanguageDropdown() {
+    const toggle = document.getElementById("languageToggle");
+    const dropdown = document.getElementById("languageDropdown");
+
+    if (!toggle || !dropdown) return;
+
+    // Evitar inicializar múltiples veces
+    if (toggle.dataset.initialized) return;
+    toggle.dataset.initialized = "true";
+
+    const toggleClasses = (isOpen: boolean) => {
+      if (isOpen) {
+        dropdown.classList.remove("opacity-0", "invisible", "-translate-y-2");
+        dropdown.classList.add("opacity-100", "visible", "translate-y-0");
+        toggle.setAttribute("aria-expanded", "true");
+      } else {
+        dropdown.classList.add("opacity-0", "invisible", "-translate-y-2");
+        dropdown.classList.remove("opacity-100", "visible", "translate-y-0");
+        toggle.setAttribute("aria-expanded", "false");
+      }
+    };
+
+    const closeDropdown = () => toggleClasses(false);
+
+    toggle.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const isOpen = dropdown.classList.contains("opacity-0");
+      toggleClasses(isOpen);
+    });
+
+    // Cerrar dropdown cuando se hace clic en un enlace
+    dropdown.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", closeDropdown);
+    });
+
+    // Cerrar al hacer clic fuera
+    document.addEventListener("click", closeDropdown);
+
+    // Prevenir cierre al hacer clic dentro (excepto en enlaces)
+    dropdown.addEventListener("click", (e) => {
+      if (!(e.target as HTMLElement).closest("a")) {
+        e.stopPropagation();
+      }
+    });
+
+    // Soporte para teclado
+    toggle.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        toggle.click();
+      }
+    });
   }
-</ul>
+
+  document.addEventListener("DOMContentLoaded", initLanguageDropdown);
+  document.addEventListener("astro:page-load", initLanguageDropdown);
+</script>
