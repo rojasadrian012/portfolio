@@ -21,7 +21,7 @@ export const ui = {
         "main.workExperience.dateMcde": "Actualmente...",
         "main.workExperience.titleMcde": "Desarrollador Fullstack",
         "main.workExperience.companyMcde": "Municipalidad de Ciudad del Este",
-        "main.workExperience.descriptionMcde": "Desarrollo de un mapa interactivo de la ciudad para actualizar nombres de calles; contribuí para actualizar propiedades usando QGIS e integré recursos geoespaciales con frameworks frontend modernos.",
+        "main.workExperience.descriptionMcde": "Desarrollo de un mapa interactivo de la ciudad para actualizar nombres de calles, contribuí para actualizar propiedades usando QGIS e integré recursos geoespaciales con frameworks frontend modernos.",
         "main.workExperience.linkTextMcde": "Saber más",
         "main.workExperience.dateGeo": "octubre 2024",
         "main.workExperience.titleGeo": "Desarrollador Fullstack",
