@@ -1,4 +1,5 @@
 ---
+import { getLangFromUrl, useTranslations } from "@/i18n/utils"
 import LinkInline from "./LinkInline.astro"
 
 interface Props {
@@ -9,6 +10,8 @@ interface Props {
   date: string
 }
 
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 const { title, company, description, link, date } = Astro.props
 ---
 
@@ -31,7 +34,7 @@ const { title, company, description, link, date } = Astro.props
     {
       link && (
         <LinkInline href={link}>
-          Saber más{" "}
+          {t("main.workExperience.linkTextMcde")}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="w-5 icon icon-tabler icon-tabler-chevron-right"

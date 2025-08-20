@@ -1,22 +1,39 @@
 ---
-import ExperienceItem from "./ExperienceItem.astro"
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import ExperienceItem from "./ExperienceItem.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
 const EXPERIENCE = [
   {
-    date: "Actualmente...",
-    title: "Creador de Contenido",
-    company: "Twitch",
-    description:
-      "Divulgo sobre programación y desarrollo web en diferentes plataformas. Galardonado como mejor creador de contenido de habla no-inglesa en 2022 y mejor comunidad en 2023 por GitHub.",
-    link: "https://twitch.tv/midudev",
+    date: t("main.workExperience.dateMcde"),
+    title: t("main.workExperience.titleMcde"),
+    company: t("main.workExperience.companyMcde"),
+    description: t("main.workExperience.descriptionMcde"),
+    link: t("main.workExperience.linkMcde"),
   },
   {
-    date: "Septiembre 2022",
-    title: "Principal Frontend Engineer",
-    company: "Adevinta Spain",
-    description:
-      "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación de medidas de integración continua y despliegue con A/B testing en más de 15 equipos.",
+    date: t("main.workExperience.dateGeo"),
+    title: t("main.workExperience.titleGeo"),
+    company: t("main.workExperience.companyGeo"),
+    description: t("main.workExperience.descriptionGeo"),
+    link: t("main.workExperience.linkGeo"),
   },
-]
+  {
+    date: t("main.workExperience.dateFdm"),
+    title: t("main.workExperience.titleFdm"),
+    company: t("main.workExperience.companyFdm"),
+    description: t("main.workExperience.descriptionFdm"),
+  },
+  {
+    date: t("main.workExperience.dateMoura"),
+    title: t("main.workExperience.titleMoura"),
+    company: t("main.workExperience.companyMoura"),
+    description: t("main.workExperience.descriptionMoura"),
+    link: t("main.workExperience.linkMoura"),
+  },
+];
 ---
 
 <ol class="relative mt-16">
