@@ -13,10 +13,11 @@ interface Props {
 
 const { description, title } = Astro.props;
 const lang = getLangFromUrl(Astro.url);
+const defaultLang = 'en';
 ---
 
 <!doctype html>
-<html lang={lang}>
+<html lang={typeof lang === 'string' ? lang : defaultLang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
