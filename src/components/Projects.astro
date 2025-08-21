@@ -8,9 +8,10 @@ import React from "./icons/React.astro";
 import ReactLeaflet from "./icons/ReactLeaflet.astro";
 import Supabase from "./icons/Supabase.astro";
 import Nestjs from "./icons/Nestjs.astro";
-// import PrimeNg from "./icons/PrimeNg.astro";
+import PrimeNg from "./icons/PrimeNg.astro";
 import Docker from "./icons/Docker.astro";
 import PostgreSQL from "./icons/PostgreSQL.astro";
+import ReactKonva from "./icons/ReactKonva.astro";
 
 const TAGS = {
   TAILWIND: {
@@ -43,11 +44,11 @@ const TAGS = {
     class: "bg-slate-800 text-white",
     icon: Nestjs,
   },
-  // PRIMENG: {
-  //   name: "PrimeNG",
-  //   class: "bg-slate-800 text-white",
-  //   icon: PrimeNg,
-  // },
+  PRIMENG: {
+    name: "PrimeNG",
+    class: "bg-slate-800 text-white",
+    icon: PrimeNg,
+  },
   DOCKER: {
     name: "Docker",
     class: "bg-[#003159] text-white",
@@ -59,6 +60,11 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: PostgreSQL,
   },
+  REACT_KONVA: {
+    name: "ReactKonva",
+    class: "bg-[#003159] text-white",
+    icon: ReactKonva,
+  },
 };
 const PROJECTS = [
   {
@@ -66,7 +72,10 @@ const PROJECTS = [
     description:
       "Desarrollo de un mapa interactivo de la ciudad para actualizar nombres de calles; contribuí para actualizar propiedades usando QGIS e integré recursos geoespaciales con frameworks frontend modernos.",
     link: "#",
-    image: "/projects/mcde.webp",
+    image: {
+      src: "/projects/mcde.webp",
+      alt: "Vista de mapa interactivo de la ciudad con actualizaciones de nombres de calles",
+    },
     tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.REACT_LEAFLET, TAGS.SUPABASE],
   },
   {
@@ -75,14 +84,46 @@ const PROJECTS = [
       "Aplicación interactiva para facilitar el aprendizaje de historia y geografía en estudiantes de sexto grado. Implementé niveles temáticos desbloqueables, lógica de puntuación con NestJS, PostgreSQL y TypeORM, y una interfaz atractiva con Angular y animaciones Lottie. También desarrollé tablas de clasificación dinámicas en tiempo real.",
     link: "#",
     github: "https://github.com/rojasadrian012/geo-story-client",
-    image: "/projects/geostory.webp",
+    image: {
+      src: "/projects/geostory.webp",
+      alt: "Interfaz de la aplicación GeoStory, enfocada en historia y geografía para estudiantes",
+    },
     tags: [
       TAGS.ANGULAR,
-      // TAGS.PRIMENG,
+      TAGS.PRIMENG,
       TAGS.NESTJS,
       TAGS.DOCKER,
       TAGS.POSTGRESQL,
     ],
+  },
+  {
+    title: "Catálogo Online para Restaurantes",
+    description:
+      "Aplicación web responsive que funciona como catálogo digital para restaurantes. Permite explorar menús organizados por categorías, visualizar direcciones y localizar los locales. Los usuarios pueden seleccionar platos y añadirlos a un carrito; al finalizar, la app genera el pedido y lo envía directamente a WhatsApp para su confirmación, sin procesar pagos en línea.",
+    link: "#",
+    image: {
+      src: "/projects/x-menu.webp",
+      alt: "Catálogo online interactivo para explorar menús de restaurantes",
+    },
+    tags: [
+      TAGS.REACT,
+      TAGS.TAILWIND,
+      TAGS.NESTJS,
+      TAGS.DOCKER,
+      TAGS.POSTGRESQL,
+    ],
+  },
+  {
+    title: "Quickmock",
+    description:
+      "Herramienta de código abierto para la simulación de interfaces de usuario de baja fidelidad. Contribuí activamente revisando y solucionando problemas en el repositorio, además de implementar nuevas funcionalidades usando React, TypeScript y React Konva para integrar componentes interactivos basados en SVG.",
+    link: "https://www.quickmock.net",
+    github: "https://github.com/rojasadrian012/quickmock",
+    image: {
+      src: "/projects/quickmock.webp",
+      alt: "Interfaz de la herramienta Quickmock para simulación de interfaces de usuario",
+    },
+    tags: [TAGS.REACT, TAGS.REACT_KONVA],
   },
 ];
 ---
@@ -94,10 +135,10 @@ const PROJECTS = [
         <div class="w-full md:w-1/2">
           <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
             <img
-              alt="Recién llegado vs 5 años en Nueva Zelanda"
+              alt={image.alt}
               class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
               loading="lazy"
-              src={image}
+              src={image.src}
             />
           </div>
         </div>
@@ -107,7 +148,7 @@ const PROJECTS = [
             {title}
           </h3>
           <div class="flex flex-wrap mt-2">
-            <ul class="flex flex-row mb-2 gap-x-2">
+            <ul class="flex flex-wrap mb-2 gap-2">
               {tags.map((tag) => (
                 <li>
                   <span
