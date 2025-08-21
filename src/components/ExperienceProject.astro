@@ -1,8 +1,11 @@
 ---
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 import type { Project } from "@/types/experience";
 
 interface Props extends Project {}
 
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 const { img, tags } = Astro.props;
 ---
 
@@ -13,7 +16,7 @@ const { img, tags } = Astro.props;
         loading="lazy"
         src={img.src}
     />
-    <p>Tecnologías y Herramientas</p>
+    <p>{t("main.workExperience.technologies")}</p>
     <ul class="flex flex-wrap mb-2 gap-2">
         {
             tags.map((tag) => (
