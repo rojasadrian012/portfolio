@@ -1,37 +1,71 @@
 ---
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import type { Experience } from "@/types/experience";
 import ExperienceItem from "./ExperienceItem.astro";
+import { TAGS } from "./Projects.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-const EXPERIENCE = [
+const EXPERIENCE: Experience[] = [
   {
-    date: t("main.workExperience.dateMcde"),
     title: t("main.workExperience.titleMcde"),
     company: t("main.workExperience.companyMcde"),
     description: t("main.workExperience.descriptionMcde"),
     link: t("main.workExperience.linkMcde"),
+    date: t("main.workExperience.dateMcde"),
+    project: {
+      img: {
+        src: "/projects/mcde.webp",
+        alt: "Vista de mapa interactivo de la ciudad con actualizaciones de nombres de calles",
+      },
+      tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.REACT_LEAFLET, TAGS.SUPABASE],
+    },
   },
   {
-    date: t("main.workExperience.dateGeo"),
     title: t("main.workExperience.titleGeo"),
     company: t("main.workExperience.companyGeo"),
     description: t("main.workExperience.descriptionGeo"),
     link: t("main.workExperience.linkGeo"),
+    date: t("main.workExperience.dateGeo"),
+    project: {
+      img: {
+        src: "/projects/geostory.webp",
+        alt: "Interfaz de la aplicación GeoStory, enfocada en historia y geografía para estudiantes",
+      },
+      tags: [
+        TAGS.ANGULAR,
+        TAGS.PRIMENG,
+        TAGS.NESTJS,
+        TAGS.DOCKER,
+        TAGS.POSTGRESQL,
+      ],
+    },
   },
   {
-    date: t("main.workExperience.dateFdm"),
     title: t("main.workExperience.titleFdm"),
     company: t("main.workExperience.companyFdm"),
     description: t("main.workExperience.descriptionFdm"),
+    date: t("main.workExperience.dateFdm"),
+    project: {
+      img: {
+        src: "/projects/fdm.webp",
+        alt: "Interfaz farmcia divina misericordia.",
+      },
+      tags: [
+        TAGS.ANGULAR,
+        TAGS.PRIMENG,
+        TAGS.DOTNET,
+        TAGS.SQLSERVER,
+      ],
+    },
   },
   {
-    date: t("main.workExperience.dateMoura"),
     title: t("main.workExperience.titleMoura"),
     company: t("main.workExperience.companyMoura"),
     description: t("main.workExperience.descriptionMoura"),
     link: t("main.workExperience.linkMoura"),
+    date: t("main.workExperience.dateMoura"),
   },
 ];
 ---

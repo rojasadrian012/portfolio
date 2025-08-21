@@ -12,8 +12,10 @@ import PrimeNg from "./icons/PrimeNg.astro";
 import Docker from "./icons/Docker.astro";
 import PostgreSQL from "./icons/PostgreSQL.astro";
 import ReactKonva from "./icons/ReactKonva.astro";
+import Dotnet from "./icons/Dotnet.astro";
+import Sqlserver from "./icons/sqlserver.astro";
 
-const TAGS = {
+export const TAGS = {
   TAILWIND: {
     name: "Tailwind CSS",
     class: "bg-[#003159] text-white",
@@ -54,7 +56,6 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: Docker,
   },
-
   POSTGRESQL: {
     name: "PostgreSQL",
     class: "bg-[#003159] text-white",
@@ -65,37 +66,18 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: ReactKonva,
   },
+  DOTNET: {
+    name: "Dotnet",
+    class: "bg-[#003159] text-white",
+    icon: Dotnet,
+  },
+  SQLSERVER: {
+    name: "SQL Server",
+    class: "bg-[#003159] text-white",
+    icon: Sqlserver,
+  },
 };
 const PROJECTS = [
-  {
-    title: "Mapa Interactivo",
-    description:
-      "Desarrollo de un mapa interactivo de la ciudad para actualizar nombres de calles; contribuí para actualizar propiedades usando QGIS e integré recursos geoespaciales con frameworks frontend modernos.",
-    link: "#",
-    image: {
-      src: "/projects/mcde.webp",
-      alt: "Vista de mapa interactivo de la ciudad con actualizaciones de nombres de calles",
-    },
-    tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.REACT_LEAFLET, TAGS.SUPABASE],
-  },
-  {
-    title: "GeoStory",
-    description:
-      "Aplicación interactiva para facilitar el aprendizaje de historia y geografía en estudiantes de sexto grado. Implementé niveles temáticos desbloqueables, lógica de puntuación con NestJS, PostgreSQL y TypeORM, y una interfaz atractiva con Angular y animaciones Lottie. También desarrollé tablas de clasificación dinámicas en tiempo real.",
-    link: "#",
-    github: "https://github.com/rojasadrian012/geo-story-client",
-    image: {
-      src: "/projects/geostory.webp",
-      alt: "Interfaz de la aplicación GeoStory, enfocada en historia y geografía para estudiantes",
-    },
-    tags: [
-      TAGS.ANGULAR,
-      TAGS.PRIMENG,
-      TAGS.NESTJS,
-      TAGS.DOCKER,
-      TAGS.POSTGRESQL,
-    ],
-  },
   {
     title: "Catálogo Online para Restaurantes",
     description:

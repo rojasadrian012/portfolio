@@ -1,0 +1,31 @@
+---
+import type { Project } from "@/types/experience";
+
+interface Props extends Project {}
+
+const { img, tags } = Astro.props;
+---
+
+<>
+    <img
+        alt={img.alt}
+        class="rounded-xl object-cover w-full max-w-full h-auto transition duration-500"
+        loading="lazy"
+        src={img.src}
+    />
+    <p>Tecnologías y Herramientas</p>
+    <ul class="flex flex-wrap mb-2 gap-2">
+        {
+            tags.map((tag) => (
+                <li>
+                    <span
+                        class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
+                    >
+                        <tag.icon class="size-4" />
+                        {tag.name}
+                    </span>
+                </li>
+            ))
+        }
+    </ul>
+</>
