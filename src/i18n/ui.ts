@@ -1,12 +1,15 @@
+export const defaultLang = 'en';
 export const languages = {
   es: "Español",
   en: "English",
   pt: "Português",
 }
 
-export const defaultLang = 'en';
+type UiLanguage = {
+  [key: string]: string | UiLanguage;
+};
 
-export const ui = {
+export const ui: { [lang: string]: UiLanguage } = {
   en: {
     "header.nav.about": "About me",
     "header.nav.projects": "Projects",
