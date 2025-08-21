@@ -21,30 +21,31 @@ const t = useTranslations(lang);
     <SectionContainer class="py-16 md:py-36">
       <Hero />
     </SectionContainer>
+
+    <div class="space-y-24">
+      <SectionContainer id="experiencia">
+        <TitleSection>
+          <Briefcase class="size-8" />
+          {t("main.workExperience")}
+        </TitleSection>
+        <Experience />
+      </SectionContainer>
+
+      <SectionContainer id="proyectos">
+        <TitleSection>
+          <CodeIcon class="size-7" />
+          {t("main.projects")}
+        </TitleSection>
+        <Projects />
+      </SectionContainer>
+
+      <SectionContainer id="sobre-mi">
+        <TitleSection>
+          <ProfileCheck class="size-8" />
+          {t("main.me")}
+        </TitleSection>
+        <AboutMe />
+      </SectionContainer>
+    </div>
   </main>
-  <div class="space-y-24">
-    <SectionContainer id="experiencia">
-      <TitleSection>
-        <Briefcase class="size-8" />
-        {t("main.workExperience")}
-      </TitleSection>
-      <Experience />
-    </SectionContainer>
-
-    <SectionContainer id="proyectos">
-      <TitleSection>
-        <CodeIcon class="size-7" />
-        {t("main.projects")}
-      </TitleSection>
-      <Projects />
-    </SectionContainer>
-
-    <SectionContainer id="sobre-mi">
-      <TitleSection>
-        <ProfileCheck class="size-8" />
-        {t("main.me")}
-      </TitleSection>
-      <AboutMe />
-    </SectionContainer>
-  </div>
 </Layout>
