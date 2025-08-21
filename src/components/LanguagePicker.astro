@@ -20,12 +20,14 @@ const currentLang = getLangFromUrl(Astro.url);
     aria-expanded="false"
   >
     <Language />
-    <span class="ml-0.5 mr-2">{languages[currentLang]}</span>
+    <span class="ml-0.5 mr-2"
+      >{languages[currentLang as keyof typeof languages]}</span
+    >
     <DrownArow />
   </button>
 
   <ul
-    class="absolute top-7 right-0 mt-2 py-2 
+    class="absolute top-7 right-0 mt-2 py-2
     opacity-0 invisible -translate-y-2 transition-all duration-200 rounded-md border border-gray-100 bg-white/90 dark:bg-gray-900/90 dark:border-gray-500/20
     shadow-[0_3px_10px_rgb(0,0,0,0.2)] backdrop-blur-md"
     id="languageDropdown"
