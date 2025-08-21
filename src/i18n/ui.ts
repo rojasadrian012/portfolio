@@ -1,12 +1,15 @@
+export const defaultLang = 'en';
 export const languages = {
   es: "Español",
   en: "English",
   pt: "Português",
 }
 
-export const defaultLang = 'en';
+type UiLanguage = {
+  [key: string]: string | UiLanguage;
+};
 
-export const ui = {
+export const ui: { [lang: string]: UiLanguage } = {
   en: {
     "header.nav.about": "About me",
     "header.nav.projects": "Projects",
@@ -75,12 +78,14 @@ export const ui = {
     "main.workExperience.titleMcde": "Desarrollador Fullstack",
     "main.workExperience.companyMcde": "Municipalidad de Ciudad del Este",
     "main.workExperience.descriptionMcde": "Desarrollo de un mapa interactivo de la ciudad para actualizar nombres de calles, contribuí para actualizar propiedades usando QGIS e integré recursos geoespaciales con frameworks frontend modernos.",
+    "main.workExperience.linkMcde": "#",
+    "main.workExperience.linkGeo": "#",
+    "main.workExperience.linkTextGeo": "Saber más",
     "main.workExperience.linkTextMcde": "Saber más",
     "main.workExperience.dateGeo": "octubre 2024",
     "main.workExperience.titleGeo": "Desarrollador Fullstack",
     "main.workExperience.companyGeo": "GeoStory (Freelancer)",
     "main.workExperience.descriptionGeo": "Aplicación interactiva para facilitar el aprendizaje de historia y geografía en estudiantes de sexto grado. Implementé niveles temáticos desbloqueables, lógica de puntuación con NestJS, PostgreSQL y TypeORM, y una interfaz atractiva con Angular y animaciones Lottie. También desarrollé tablas de clasificación dinámicas en tiempo real.",
-    "main.workExperience.linkTextGeo": "Saber más",
     "main.workExperience.dateFdm": "marzo 2024",
     "main.workExperience.titleFdm": "Desarrollador FullStack",
     "main.workExperience.companyFdm": "Farmacia Divina Misericordia (Freelancer)",
@@ -157,6 +162,8 @@ export const ui = {
     "main.workExperience.titleGeo": "Desenvolvedor Fullstack",
     "main.workExperience.companyGeo": "GeoStory (Freelancer)",
     "main.workExperience.descriptionGeo": "Aplicação interativa para facilitar o aprendizado de história e geografia para alunos da sexta série. Implementei níveis temáticos desbloqueáveis, lógica de pontuação com NestJS, PostgreSQL e TypeORM, e uma interface envolvente com Angular e animações Lottie. Também desenvolvi rankings dinâmicos em tempo real.",
+    "main.workExperience.linkMcde": "#",
+    "main.workExperience.linkGeo": "#",
     "main.workExperience.linkTextGeo": "Saber mais",
     "main.workExperience.dateFdm": "Março 2024",
     "main.workExperience.titleFdm": "Desenvolvedor Full-stack",
