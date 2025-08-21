@@ -7,6 +7,59 @@ export const languages = {
 export const defaultLang = 'en';
 
 export const ui = {
+  en: {
+    "header.nav.about": "About me",
+    "header.nav.projects": "Projects",
+    "header.nav.experience": "Experience",
+    "header.nav.contact": "Contact",
+    "hero.title": "Hey, I'm Adrian",
+    "hero.description": "+3 years of experience. <strong>Full-stack Developer</strong> From Ciudad del Este, Paraguay 🇵🇾. Specialized in creating unique solutions.",
+    "hero.contactme": "Contact me",
+    "main.workExperience": "Work Experience",
+    "main.projects": "Projects",
+    "main.me": "About Me",
+    "main.workExperience.dateMcde": "Currently...",
+    "main.workExperience.titleMcde": "Full-stack Developer",
+    "main.workExperience.companyMcde": "Municipalidad de Ciudad del Este",
+    "main.workExperience.descriptionMcde": "Development of an interactive city map for updating street names; contributed to property updates using QGIS and integrated geospatial features with modern frontend frameworks.",
+    "main.workExperience.linkMcde": "#",
+    "main.workExperience.linkTextMcde": "Learn more",
+    "main.workExperience.dateGeo": "October 2024",
+    "main.workExperience.titleGeo": "Full-stack Developer",
+    "main.workExperience.companyGeo": "GeoStory (Freelancer)",
+    "main.workExperience.descriptionGeo": "Interactive app to facilitate history and geography learning for sixth-grade students. I implemented unlockable thematic levels, scoring logic using NestJS, PostgreSQL, and TypeORM, and an engaging interface using Angular and Lottie animations. I also developed dynamic, real-time leaderboards.",
+    "main.workExperience.linkGeo": "#",
+    "main.workExperience.linkTextGeo": "Learn more",
+    "main.workExperience.dateFdm": "March 2024",
+    "main.workExperience.titleFdm": "Full-stack Developer",
+    "main.workExperience.companyFdm": "Farmacia Divina Misericordia (Freelancer)",
+    "main.workExperience.descriptionFdm": "Inventory management system for small pharmacies. It included stock control, generation of regulatory reports in Excel using DotNetCore.NPOI, ticket and PDF report creation using PdfMake, and an interactive control panel using Angular and .NET.",
+    "main.workExperience.dateMoura": "February 2023",
+    "main.workExperience.titleMoura": "Full-stack Developer",
+    "main.workExperience.companyMoura": "Moura Management Systems",
+    "main.workExperience.descriptionMoura": "Participation in the development of business management modules. I designed interfaces with Angular, developed backend logic with Visual Basic and ASP.NET, fixed bugs, generated Excel reports, and collaborated in an agile environment using GitLab and Swagger.",
+    "main.workExperience.linkMoura": "https://www.jnmoura.com.br/",
+    "main.workExperience.technologies": "Technologies and Tools",
+    "main.projects.titleXmenu": "Online Catalog for Restaurants",
+    "main.projects.descriptionXmenu": "Responsive web application that functions as a digital catalog for restaurants. It allows users to explore menus organized by categories, view addresses, and locate the venues. Users can select dishes and add them to a cart; upon checkout, the app generates the order and sends it directly to WhatsApp for confirmation, without processing online payments.",
+    "main.projects.titleQuickmock": "Quickmock",
+    "main.projects.descriptionQuickmock": "Open-source tool for simulating low-fidelity user interfaces. I actively contributed by reviewing and troubleshooting issues in the repository, as well as implementing new features using React, TypeScript, and React Konva to integrate interactive SVG-based components.",
+    "main.aboutMe": `
+        <p>
+  I started my training in <strong>Systems Analysis</strong>, but my true passion for programming was born during an intensive course in <strong>Brazil</strong>. It was a unique challenge; I was the only one who didn’t speak Portuguese well in a program conducted entirely in <strong>Portuguese</strong>, but that experience allowed me to learn from exceptional professors and acquire knowledge in technologies like <strong>Angular</strong> and <strong>.NET</strong>. Upon finishing, I was selected for my first job as a remote developer.
+</p>
+<p>
+  With over <strong>2 years of experience</strong>, I work in <strong>frontend and fullstack development</strong>, building web applications with <strong>React</strong>, <strong>Angular</strong>, <strong>Nest.js</strong>, <strong>.NET</strong>, and <strong>PostgreSQL</strong>. I have participated in various projects, from <strong>gamification</strong> applications to enterprise resource planning systems. My experience includes working in agile teams with <strong>Scrum</strong> methodologies, and I am currently exploring tools like <strong>Docker</strong> and <strong>artificial intelligence</strong> to improve my workflow.
+</p>
+<p>
+  My focus has always been on delivering quality solutions by working <strong>collaboratively</strong> to generate real value in every project. Although I handle the full stack, I find my greatest passion in <strong>frontend</strong> due to its visual and creative component. When I’m not programming, I enjoy <strong>volleyball</strong>, <strong>recreational cycling</strong>, geopolitics, technology, and <strong>video games</strong>.
+</p>
+
+        `,
+    "themeDark": "Light",
+    "themeLight": "Dark",
+    "themeSystem": "System"
+  },
   es: {
     "header.nav.about": "Sobre mí",
     "header.nav.projects": "Proyectos",
@@ -84,59 +137,6 @@ export const ui = {
     "themeLight": "Claro",
     "themeSystem": "Sistema"
   },
-  en: {
-    "header.nav.about": "About me",
-    "header.nav.projects": "Projects",
-    "header.nav.experience": "Experience",
-    "header.nav.contact": "Contact",
-    "hero.title": "Hey, I'm Adrian",
-    "hero.description": "+3 years of experience. <strong>Full-stack Developer</strong> From Ciudad del Este, Paraguay 🇵🇾. Specialized in creating unique solutions.",
-    "hero.contactme": "Contact me",
-    "main.workExperience": "Work Experience",
-    "main.projects": "Projects",
-    "main.me": "About Me",
-    "main.workExperience.dateMcde": "Currently...",
-    "main.workExperience.titleMcde": "Full-stack Developer",
-    "main.workExperience.companyMcde": "Municipalidad de Ciudad del Este",
-    "main.workExperience.descriptionMcde": "Development of an interactive city map for updating street names; contributed to property updates using QGIS and integrated geospatial features with modern frontend frameworks.",
-    "main.workExperience.linkMcde": "#",
-    "main.workExperience.linkTextMcde": "Learn more",
-    "main.workExperience.dateGeo": "October 2024",
-    "main.workExperience.titleGeo": "Full-stack Developer",
-    "main.workExperience.companyGeo": "GeoStory (Freelancer)",
-    "main.workExperience.descriptionGeo": "Interactive app to facilitate history and geography learning for sixth-grade students. I implemented unlockable thematic levels, scoring logic using NestJS, PostgreSQL, and TypeORM, and an engaging interface using Angular and Lottie animations. I also developed dynamic, real-time leaderboards.",
-    "main.workExperience.linkTextGeo": "Learn more",
-    "main.workExperience.linkGeo": "#",
-    "main.workExperience.dateFdm": "March 2024",
-    "main.workExperience.titleFdm": "Full-stack Developer",
-    "main.workExperience.companyFdm": "Farmacia Divina Misericordia (Freelancer)",
-    "main.workExperience.descriptionFdm": "Inventory management system for small pharmacies. It included stock control, generation of regulatory reports in Excel using DotNetCore.NPOI, ticket and PDF report creation using PdfMake, and an interactive control panel using Angular and .NET.",
-    "main.workExperience.dateMoura": "February 2023",
-    "main.workExperience.titleMoura": "Full-stack Developer",
-    "main.workExperience.companyMoura": "Moura Management Systems",
-    "main.workExperience.descriptionMoura": "Participation in the development of business management modules. I designed interfaces with Angular, developed backend logic with Visual Basic and ASP.NET, fixed bugs, generated Excel reports, and collaborated in an agile environment using GitLab and Swagger.",
-    "main.workExperience.linkMoura": "https://www.jnmoura.com.br/",
-    "main.workExperience.technologies": "Technologies and Tools",
-    "main.projects.titleXmenu": "Online Catalog for Restaurants",
-    "main.projects.descriptionXmenu": "Responsive web application that functions as a digital catalog for restaurants. It allows users to explore menus organized by categories, view addresses, and locate the venues. Users can select dishes and add them to a cart; upon checkout, the app generates the order and sends it directly to WhatsApp for confirmation, without processing online payments.",
-    "main.projects.titleQuickmock": "Quickmock",
-    "main.projects.descriptionQuickmock": "Open-source tool for simulating low-fidelity user interfaces. I actively contributed by reviewing and troubleshooting issues in the repository, as well as implementing new features using React, TypeScript, and React Konva to integrate interactive SVG-based components.",
-    "main.aboutMe": `
-        <p>
-  I started my training in <strong>Systems Analysis</strong>, but my true passion for programming was born during an intensive course in <strong>Brazil</strong>. It was a unique challenge; I was the only one who didn’t speak Portuguese well in a program conducted entirely in <strong>Portuguese</strong>, but that experience allowed me to learn from exceptional professors and acquire knowledge in technologies like <strong>Angular</strong> and <strong>.NET</strong>. Upon finishing, I was selected for my first job as a remote developer.
-</p>
-<p>
-  With over <strong>2 years of experience</strong>, I work in <strong>frontend and fullstack development</strong>, building web applications with <strong>React</strong>, <strong>Angular</strong>, <strong>Nest.js</strong>, <strong>.NET</strong>, and <strong>PostgreSQL</strong>. I have participated in various projects, from <strong>gamification</strong> applications to enterprise resource planning systems. My experience includes working in agile teams with <strong>Scrum</strong> methodologies, and I am currently exploring tools like <strong>Docker</strong> and <strong>artificial intelligence</strong> to improve my workflow.
-</p>
-<p>
-  My focus has always been on delivering quality solutions by working <strong>collaboratively</strong> to generate real value in every project. Although I handle the full stack, I find my greatest passion in <strong>frontend</strong> due to its visual and creative component. When I’m not programming, I enjoy <strong>volleyball</strong>, <strong>recreational cycling</strong>, geopolitics, technology, and <strong>video games</strong>.
-</p>
-
-        `,
-    "themeDark": "Light",
-    "themeLight": "Dark",
-    "themeSystem": "System"
-  },
   pt: {
     "header.nav.about": "Sobre mim",
     "header.nav.projects": "Projetos",
@@ -158,7 +158,6 @@ export const ui = {
     "main.workExperience.companyGeo": "GeoStory (Freelancer)",
     "main.workExperience.descriptionGeo": "Aplicação interativa para facilitar o aprendizado de história e geografia para alunos da sexta série. Implementei níveis temáticos desbloqueáveis, lógica de pontuação com NestJS, PostgreSQL e TypeORM, e uma interface envolvente com Angular e animações Lottie. Também desenvolvi rankings dinâmicos em tempo real.",
     "main.workExperience.linkTextGeo": "Saber mais",
-    "main.workExperience.linkGeo": "#",
     "main.workExperience.dateFdm": "Março 2024",
     "main.workExperience.titleFdm": "Desenvolvedor Full-stack",
     "main.workExperience.companyFdm": "Farmacia Divina Misericordia (Freelancer)",
