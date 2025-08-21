@@ -57,11 +57,12 @@ export const ui: { [lang: string]: UiLanguage } = {
 <p>
   My focus has always been on delivering quality solutions by working <strong>collaboratively</strong> to generate real value in every project. Although I handle the full stack, I find my greatest passion in <strong>frontend</strong> due to its visual and creative component. When I’m not programming, I enjoy <strong>volleyball</strong>, <strong>recreational cycling</strong>, geopolitics, technology, and <strong>video games</strong>.
 </p>
-
         `,
     "themeDark": "Light",
     "themeLight": "Dark",
-    "themeSystem": "System"
+    "themeSystem": "System",
+    "layout.title":"Adrian's Portfolio - Web Developer and Programmer with 2+ years of experience",
+    "layout.description":"Hire Adrian to create your web or mobile application. Web Developer and Content Creator. Specialized in creating unique applications.",
   },
   es: {
     "header.nav.about": "Sobre mí",
@@ -141,7 +142,9 @@ export const ui: { [lang: string]: UiLanguage } = {
         `,
     "themeDark": "Oscuro",
     "themeLight": "Claro",
-    "themeSystem": "Sistema"
+    "themeSystem": "Sistema",
+    "layout.title":"Porfolio de Adrian - Desarrollador y Programador Web con +2 años de experiencia.",
+    "layout.description":"Contrata a adrian para crear tu aplicación web o móvil. Desarrollador Web y Creador de Contenido. Especializado en crear aplicaciones únicas.",
   },
   pt: {
     "header.nav.about": "Sobre mim",
@@ -193,7 +196,9 @@ export const ui: { [lang: string]: UiLanguage } = {
         `,
     "themeDark": "Claro",
     "themeLight": "Escuro",
-    "themeSystem": "Sistema"
+    "themeSystem": "Sistema",
+    "layout.title":"Portfólio de Adrian - Desenvolvedor Web e Programador com mais de 2 anos de experiência.",
+    "layout.description":"Contrate Adrian para criar sua aplicação web ou móvel. Desenvolvedor Web e Criador de Conteúdo. Especializado em criar aplicações únicas.",
 
   }
 }
