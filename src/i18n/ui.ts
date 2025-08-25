@@ -49,21 +49,22 @@ export const ui: { [lang: string]: UiLanguage } = {
     "main.projects.titleQuickmock": "Quickmock",
     "main.projects.descriptionQuickmock": "Open-source tool for simulating low-fidelity user interfaces. I actively contributed by reviewing and troubleshooting issues in the repository, as well as implementing new features using React, TypeScript, and React Konva to integrate interactive SVG-based components.",
     "main.aboutMe": `
-        <p>
-  I started my training in <strong>Systems Analysis</strong>, but my true passion for programming was born during an intensive course in <strong>Brazil</strong>. It was a unique challenge; I was the only one who didn’t speak Portuguese well in a program conducted entirely in <strong>Portuguese</strong>, but that experience allowed me to learn from exceptional professors and acquire knowledge in technologies like <strong>Angular</strong> and <strong>.NET</strong>. Upon finishing, I was selected for my first job as a remote developer.
-</p>
-<p>
-  With over <strong>2 years of experience</strong>, I work in <strong>frontend and fullstack development</strong>, building web applications with <strong>React</strong>, <strong>Angular</strong>, <strong>Nest.js</strong>, <strong>.NET</strong>, and <strong>PostgreSQL</strong>. I have participated in various projects, from <strong>gamification</strong> applications to enterprise resource planning systems. My experience includes working in agile teams with <strong>Scrum</strong> methodologies, and I am currently exploring tools like <strong>Docker</strong> and <strong>artificial intelligence</strong> to improve my workflow.
-</p>
-<p>
-  My focus has always been on delivering quality solutions by working <strong>collaboratively</strong> to generate real value in every project. Although I handle the full stack, I find my greatest passion in <strong>frontend</strong> due to its visual and creative component. When I’m not programming, I enjoy <strong>volleyball</strong>, <strong>recreational cycling</strong>, geopolitics, technology, and <strong>video games</strong>.
-</p>
-        `,
+      <p>
+        I started my training in <strong>Systems Analysis</strong>, but my true passion for programming was born during an intensive course in <strong>Brazil</strong>. It was a unique challenge; I was the only one who didn’t speak Portuguese well in a program conducted entirely in <strong>Portuguese</strong>, but that experience allowed me to learn from exceptional professors and acquire knowledge in technologies like <strong>Angular</strong> and <strong>.NET</strong>. Upon finishing, I was selected for my first job as a remote developer.
+      </p>
+      <p>
+        With over <strong>2 years of experience</strong>, I work in <strong>frontend and fullstack development</strong>, building web applications with <strong>React</strong>, <strong>Angular</strong>, <strong>Nest.js</strong>, <strong>.NET</strong>, and <strong>PostgreSQL</strong>. I have participated in various projects, from <strong>gamification</strong> applications to enterprise resource planning systems. My experience includes working in agile teams with <strong>Scrum</strong> methodologies, and I am currently exploring tools like <strong>Docker</strong> and <strong>artificial intelligence</strong> to improve my workflow.
+      </p>
+      <p>
+        My focus has always been on delivering quality solutions by working <strong>collaboratively</strong> to generate real value in every project. Although I handle the full stack, I find my greatest passion in <strong>frontend</strong> due to its visual and creative component. When I’m not programming, I enjoy <strong>volleyball</strong>, geopolitics, technology, and <strong>video games</strong>.
+      </p>
+      `,
     "themeDark": "Light",
     "themeLight": "Dark",
     "themeSystem": "System",
     "layout.title": "Adrian's Portfolio - Web Developer and Programmer with 2+ years of experience",
     "layout.description": "Hire Adrian to create your web or mobile application. Web Developer and Content Creator. Specialized in creating unique applications.",
+    "footer.copyright": "Almost all rights reserved",
   },
   es: {
     "header.nav.about": "Sobre mí",
@@ -104,49 +105,49 @@ export const ui: { [lang: string]: UiLanguage } = {
     "main.projects.titleQuickmock": "Quickmock",
     "main.projects.descriptionQuickmock": "Herramienta de código abierto para la simulación de interfaces de usuario de baja fidelidad. Contribuí activamente revisando y solucionando problemas en el repositorio, además de implementar nuevas funcionalidades usando React, TypeScript y React Konva para integrar componentes interactivos basados en SVG.",
     "main.aboutMe": `
-        <p>
-      Comencé mi formación en <strong>Análisis de Sistemas</strong>, pero mi
-      verdadera pasión por la programación nació durante un curso intensivo en <strong
-        >Brasil</strong
-      >. Fue un desafío único, era el único que no hablaba bien portugues en un
-      programa dictado completamente en <strong>portugués</strong>, pero esa
-      experiencia me permitió aprender de profesores excepcionales y adquirir
-      conocimientos en tecnologías como <strong>Angular</strong> y <strong
-        >.NET</strong
-      >. Al finalizar, fui seleccionado para mi primer empleo como desarrollador
-      remoto.
-    </p>
-    <p>
-      Con más de <strong>2 años de experiencia</strong>, trabajo en desarrollo <strong
-        >frontend y fullstack</strong
-      >, construyendo aplicaciones web con <strong>React</strong>, <strong
-        >Angular</strong
-      >, <strong>Nest.js</strong>, <strong>.NET</strong> y <strong
-        >PostgreSQL</strong
-      >. He participado en proyectos diversos, desde aplicaciones de <strong
-        >gamificación</strong
-      > hasta sistemas de gestión empresarial. Mi experiencia incluye trabajo en
-      equipos ágiles con metodologías <strong>Scrum</strong>, y actualmente
-      exploro herramientas como <strong>Docker</strong> e <strong
-        >inteligencia artificial</strong
-      > para mejorar mi flujo de trabajo.
-    </p>
+      <p>
+        Comencé mi formación en <strong>Análisis de Sistemas</strong>, pero mi
+        verdadera pasión por la programación nació durante un curso intensivo en <strong
+          >Brasil</strong
+        >. Fue un desafío único, era el único que no hablaba bien portugues en un
+        programa dictado completamente en <strong>portugués</strong>, pero esa
+        experiencia me permitió aprender de profesores excepcionales y adquirir
+        conocimientos en tecnologías como <strong>Angular</strong> y <strong
+          >.NET</strong
+        >. Al finalizar, fui seleccionado para mi primer empleo como desarrollador
+        remoto.
+      </p>
+      <p>
+        Con más de <strong>2 años de experiencia</strong>, trabajo en desarrollo <strong
+          >frontend y fullstack</strong
+        >, construyendo aplicaciones web con <strong>React</strong>, <strong
+          >Angular</strong
+        >, <strong>Nest.js</strong>, <strong>.NET</strong> y <strong
+          >PostgreSQL</strong
+        >. He participado en proyectos diversos, desde aplicaciones de <strong
+          >gamificación</strong
+        > hasta sistemas de gestión empresarial. Mi experiencia incluye trabajo en
+        equipos ágiles con metodologías <strong>Scrum</strong>, y actualmente
+        exploro herramientas como <strong>Docker</strong> e <strong
+          >inteligencia artificial</strong
+        > para mejorar mi flujo de trabajo.
+      </p>
 
-    <p>
-      Mi enfoque siempre ha sido entregar soluciones de calidad trabajando de
-      forma <strong>colaborativa</strong> para generar valor real en cada proyecto.
-      Aunque manejo el stack completo, encuentro mi mayor pasión en el <strong
-        >frontend</strong
-      > por su componente visual y creativo. Cuando no estoy programando, disfruto
-      del <strong>voleibol</strong>, <strong>ciclismo recreativo</strong>,
-      geopolítica, tecnología y <strong>videojuegos</strong>.
-    </p>
-        `,
+      <p>
+        Mi enfoque siempre ha sido entregar soluciones de calidad trabajando de
+        forma <strong>colaborativa</strong> para generar valor real en cada proyecto.
+        Aunque manejo el stack completo, encuentro mi mayor pasión en el <strong
+          >frontend</strong
+        > por su componente visual y creativo. Cuando no estoy programando, disfruto
+        del <strong>voleibol</strong>, geopolítica, tecnología y <strong>videojuegos</strong>.
+      </p>
+      `,
     "themeDark": "Oscuro",
     "themeLight": "Claro",
     "themeSystem": "Sistema",
     "layout.title": "Porfolio de Adrian - Desarrollador y Programador Web con +2 años de experiencia.",
     "layout.description": "Contrata a adrian para crear tu aplicación web o móvil. Desarrollador Web y Creador de Contenido. Especializado en crear aplicaciones únicas.",
+    "footer.copyright": "Casi todos los derechos reservados",
   },
   pt: {
     "header.nav.about": "Sobre mim",
@@ -187,21 +188,21 @@ export const ui: { [lang: string]: UiLanguage } = {
     "main.projects.titleQuickmock": "Quickmock",
     "main.projects.descriptionQuickmock": "Ferramenta open-source para simulação de interfaces de usuário de baixa fidelidade. Contribuí ativamente revisando e solucionando problemas no repositório, além de implementar novas funcionalidades usando React, TypeScript e React Konva para integrar componentes interativos baseados em SVG.",
     "main.aboutMe": `
-        <p>
-  Comecei minha formação em <strong>Análise de Sistemas</strong>, mas minha verdadeira paixão pela programação surgiu durante um curso intensivo no <strong>Brasil</strong>. Foi um desafio único, eu era o único que não falava bem português em um programa totalmente ministrado em <strong>português</strong>, mas essa experiência me permitiu aprender com professores excepcionais e adquirir conhecimentos em tecnologias como <strong>Angular</strong> e <strong>.NET</strong>. Ao finalizar, fui selecionado para o meu primeiro emprego como desenvolvedor remoto.
-</p>
-<p>
-  Com mais de <strong>2 anos de experiência</strong>, trabalho no desenvolvimento <strong>frontend e fullstack</strong>, criando aplicações web com <strong>React</strong>, <strong>Angular</strong>, <strong>Nest.js</strong>, <strong>.NET</strong> e <strong>PostgreSQL</strong>. Participei de projetos diversos, desde aplicações de <strong>gamificação</strong> até sistemas de gestão empresarial. Minha experiência inclui trabalho em equipes ágeis com metodologias <strong>Scrum</strong>, e atualmente estou explorando ferramentas como <strong>Docker</strong> e <strong>inteligência artificial</strong> para melhorar meu fluxo de trabalho.
-</p>
-<p>
-  Meu foco sempre foi entregar soluções de qualidade, trabalhando de forma <strong>colaborativa</strong> para gerar valor real em cada projeto. Embora eu trabalhe com o stack completo, minha maior paixão é o <strong>frontend</strong> devido ao seu componente visual e criativo. Quando não estou programando, gosto de <strong>vôlei</strong>, <strong>ciclismo recreativo</strong>, geopolítica, tecnologia e <strong>videogames</strong>.
-</p>
-        `,
+      <p>
+        Comecei minha formação em <strong>Análise de Sistemas</strong>, mas minha verdadeira paixão pela programação surgiu durante um curso intensivo no <strong>Brasil</strong>. Foi um desafio único, eu era o único que não falava bem português em um programa totalmente ministrado em <strong>português</strong>, mas essa experiência me permitiu aprender com professores excepcionais e adquirir conhecimentos em tecnologias como <strong>Angular</strong> e <strong>.NET</strong>. Ao finalizar, fui selecionado para o meu primeiro emprego como desenvolvedor remoto.
+      </p>
+      <p>
+        Com mais de <strong>2 anos de experiência</strong>, trabalho no desenvolvimento <strong>frontend e fullstack</strong>, criando aplicações web com <strong>React</strong>, <strong>Angular</strong>, <strong>Nest.js</strong>, <strong>.NET</strong> e <strong>PostgreSQL</strong>. Participei de projetos diversos, desde aplicações de <strong>gamificação</strong> até sistemas de gestão empresarial. Minha experiência inclui trabalho em equipes ágeis com metodologias <strong>Scrum</strong>, e atualmente estou explorando ferramentas como <strong>Docker</strong> e <strong>inteligência artificial</strong> para melhorar meu fluxo de trabalho.
+      </p>
+      <p>
+        Meu foco sempre foi entregar soluções de qualidade, trabalhando de forma <strong>colaborativa</strong> para gerar valor real em cada projeto. Embora eu trabalhe com o stack completo, minha maior paixão é o <strong>frontend</strong> devido ao seu componente visual e criativo. Quando não estou programando, gosto de <strong>vôlei</strong>, geopolítica, tecnologia e <strong>videogames</strong>.
+      </p>
+      `,
     "themeDark": "Claro",
     "themeLight": "Escuro",
     "themeSystem": "Sistema",
     "layout.title": "Portfólio de Adrian - Desenvolvedor Web e Programador com mais de 2 anos de experiência.",
     "layout.description": "Contrate Adrian para criar sua aplicação web ou móvel. Desenvolvedor Web e Criador de Conteúdo. Especializado em criar aplicações únicas.",
-
+    "footer.copyright": "Quase todos os direitos reservados",
   }
 }
