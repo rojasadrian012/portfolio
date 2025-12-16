@@ -5,7 +5,6 @@ import LinkedInIcon from "@/components/icons/LinkedIn.astro";
 import MailIcon from "@/components/icons/Mail.astro";
 import SocialPill from "@/components/SocialPill.astro";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
-import GitHubIcon from "./icons/GitHub.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -13,18 +12,21 @@ const t = useTranslations(lang);
 
 <div class="max-w-xl">
   <div class="flex gap-4 mb-4">
-    <img
-      class="rounded-full shadow-lg size-16 object-cover"
-      src="/me.webp"
-      alt={personalImageAlt}
-    />
+    <div class="size-16 rounded-full shadow-lg overflow-hidden">
+      <img
+        class="size-full object-cover scale-125"
+        src="/me-icon.webp"
+        alt={personalImageAlt}
+      />
+    </div>
+
     <a
       href="https://linkedin.com/in/midudev"
       target="_blank"
       rel="noopener"
       class="flex items-center transition md:justify-center md:hover:scale-105"
     >
-      <Badge>{t("hero.availability")}</Badge>
+      <Badge>Disponible para trabajar</Badge>
     </a>
   </div>
   <h1
@@ -41,13 +43,9 @@ const t = useTranslations(lang);
       <MailIcon class="size-4" />
       {t("hero.contactme")}
     </SocialPill>
-    <SocialPill href="https://linkedin.com/in/devadri">
+    <SocialPill href="https://linkedin.com/in/adripor" target="_blank">
       <LinkedInIcon class="size-4" />
       LinkedIn
-    </SocialPill>
-    <SocialPill href="https://github.com/rojasadrian012">
-      <GitHubIcon class="size-4" />
-      GitHub
     </SocialPill>
   </nav>
 </div>

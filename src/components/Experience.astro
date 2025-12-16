@@ -12,21 +12,24 @@ const EXPERIENCE: Experience[] = [
     title: t("main.workExperience.titleMcde"),
     company: t("main.workExperience.companyMcde"),
     description: t("main.workExperience.descriptionMcde"),
-    link: t("main.workExperience.linkMcde"),
     date: t("main.workExperience.dateMcde"),
     project: {
       img: {
         src: "/projects/mcde.webp",
         alt: "Ui Map",
       },
-      tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.REACT_LEAFLET, TAGS.SUPABASE],
+      tags: [
+        TAGS.REACT,
+        // TAGS.TAILWIND,
+        TAGS.REACT_LEAFLET,
+        TAGS.SUPABASE,
+      ],
     },
   },
   {
     title: t("main.workExperience.titleGeo"),
     company: t("main.workExperience.companyGeo"),
     description: t("main.workExperience.descriptionGeo"),
-    link: t("main.workExperience.linkGeo"),
     date: t("main.workExperience.dateGeo"),
     project: {
       img: {
@@ -35,7 +38,7 @@ const EXPERIENCE: Experience[] = [
       },
       tags: [
         TAGS.ANGULAR,
-        TAGS.PRIMENG,
+        // TAGS.PRIMENG,
         TAGS.NESTJS,
         TAGS.DOCKER,
         TAGS.POSTGRESQL,
@@ -54,7 +57,7 @@ const EXPERIENCE: Experience[] = [
       },
       tags: [
         TAGS.ANGULAR,
-        TAGS.PRIMENG,
+        // TAGS.PRIMENG,
         TAGS.DOTNET,
         TAGS.SQLSERVER,
       ],
