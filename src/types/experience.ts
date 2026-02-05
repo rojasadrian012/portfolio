@@ -12,6 +12,8 @@ export interface Project {
         alt: string;
     };
     tags: Tag[];
+    description?: string;
+    linkProject?: string;
 };
 
 export interface Experience {
@@ -20,5 +22,5 @@ export interface Experience {
     description: string;
     link?: string;
     date: string;
-    project?: Project
+    project?: Project | Project[];
 }

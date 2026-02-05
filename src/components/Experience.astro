@@ -13,18 +13,31 @@ const EXPERIENCE: Experience[] = [
     company: t("main.workExperience.companyMcde"),
     description: t("main.workExperience.descriptionMcde"),
     date: t("main.workExperience.dateMcde"),
-    project: {
-      img: {
-        src: "/projects/mcde.webp",
-        alt: "Ui Map",
+    project: [
+      {
+        img: {
+          src: "/projects/mcde-catastro.webp",
+          alt: "Sistema de Notificación Catastral",
+        },
+        description: t("main.workExperience.project2Mcde"),
+        tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.REACT_LEAFLET, TAGS.SUPABASE],
       },
-      tags: [
-        TAGS.REACT,
-        // TAGS.TAILWIND,
-        TAGS.REACT_LEAFLET,
-        TAGS.SUPABASE,
-      ],
-    },
+      {
+        img: {
+          src: "",
+          alt: "Sistema de Nomenclatura Vial",
+        },
+        description: t("main.workExperience.project1Mcde"),
+        linkProject: "https://www.sebamartinez.com.py/",
+        tags: [
+          TAGS.REACT,
+          TAGS.TAILWIND,
+          TAGS.REACT_LEAFLET,
+          TAGS.SUPABASE,
+          TAGS.QGIS,
+        ],
+      },
+    ],
   },
   {
     title: t("main.workExperience.titleGeo"),
