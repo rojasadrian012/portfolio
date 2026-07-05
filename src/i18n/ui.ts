@@ -17,7 +17,7 @@ export const ui: { [lang: string]: UiLanguage } = {
     "header.nav.contact": "Contact",
     "hero.availability": "Available to work",
     "hero.title": "Hey, I'm Adrian",
-    "hero.description": "+2 years of experience. <strong>Full-stack Developer</strong> From Ciudad del Este, Paraguay 🇵🇾. Specialized in creating unique solutions.",
+    "hero.description": "+3 years of experience. <strong>Full-stack Developer</strong> from Ciudad del Este, Paraguay 🇵🇾. Specialized in creating unique solutions.",
     "hero.contactme": "Contact me",
     "main.workExperience": "Work Experience",
     "main.workExperience.viewProjectButton": "View",
@@ -57,7 +57,7 @@ export const ui: { [lang: string]: UiLanguage } = {
         I started my training in <strong>Systems Analysis</strong>, but my true passion for programming was born during an intensive course in <strong>Brazil</strong>. It was a unique challenge; I was the only one who didn’t speak Portuguese well in a program conducted entirely in <strong>Portuguese</strong>, but that experience allowed me to learn from exceptional professors and acquire knowledge in technologies like <strong>Angular</strong> and <strong>.NET</strong>. Upon finishing, I was selected for my first job as a remote developer.
       </p>
       <p>
-        With over <strong>2 years of experience</strong>, I work in <strong>frontend and fullstack development</strong>, building web applications with <strong>React</strong>, <strong>Angular</strong>, <strong>Nest.js</strong>, <strong>.NET</strong>, and <strong>PostgreSQL</strong>. I have participated in various projects, from <strong>gamification</strong> applications to enterprise resource planning systems. My experience includes working in agile teams with <strong>Scrum</strong> methodologies, and I am currently exploring tools like <strong>Docker</strong> and <strong>artificial intelligence</strong> to improve my workflow.
+        With over <strong>3 years of experience</strong>, I work in <strong>frontend and fullstack development</strong>, building web applications with <strong>React</strong>, <strong>Angular</strong>, <strong>Nest.js</strong>, <strong>.NET</strong>, and <strong>PostgreSQL</strong>. I have participated in various projects, from <strong>gamification</strong> applications to enterprise resource planning systems. My experience includes working in agile teams with <strong>Scrum</strong> methodologies, and I am currently exploring tools like <strong>Docker</strong> and <strong>artificial intelligence</strong> to improve my workflow.
       </p>
       <p>
         My focus has always been on delivering quality solutions by working <strong>collaboratively</strong> to generate real value in every project. Although I handle the full stack, I find my greatest passion in <strong>frontend</strong> due to its visual and creative component. When I’m not programming, I enjoy <strong>volleyball</strong>, geopolitics, technology, and <strong>video games</strong>.
@@ -76,8 +76,8 @@ export const ui: { [lang: string]: UiLanguage } = {
     "themeDark": "Dark",
     "themeSystem": "System",
     "theme.selectLabel": "Choose theme",
-    "layout.title": "Adrian's Portfolio - Web Developer and Programmer with 2+ years of experience",
-    "layout.description": "Hire Adrian to create your web or mobile application. Web Developer and Content Creator. Specialized in creating unique applications.",
+    "layout.title": "Adrian's Portfolio - Web Developer and Programmer with 3+ years of experience",
+    "layout.description": "Full-stack Developer from Ciudad del Este, Paraguay. Specialized in creating modern, efficient web applications focused on user experience.",
     "footer.copyright": "Almost all rights reserved",
   },
   es: {
@@ -87,7 +87,7 @@ export const ui: { [lang: string]: UiLanguage } = {
     "header.nav.contact": "Contacto",
     "hero.availability": "Disponible para trabajar",
     "hero.title": "Hola, soy Adrian",
-    "hero.description": "+2 de años de experiencia. <strong>Desarrollador Fullstack</strong> De Ciudad del Este, Paraguay 🇵🇾. Especializado en crear soluciones únicas.",
+    "hero.description": "+3 años de experiencia. <strong>Desarrollador Fullstack</strong> de Ciudad del Este, Paraguay 🇵🇾. Especializado en crear soluciones únicas.",
     "hero.contactme": "Contáctame",
     "main.projects": "Proyectos",
     "main.me": "Sobre mí",
@@ -135,7 +135,7 @@ export const ui: { [lang: string]: UiLanguage } = {
         remoto.
       </p>
       <p>
-        Con más de <strong>2 años de experiencia</strong>, trabajo en desarrollo <strong
+        Con más de <strong>3 años de experiencia</strong>, trabajo en desarrollo <strong
           >frontend y fullstack</strong
         >, construyendo aplicaciones web con <strong>React</strong>, <strong
           >Angular</strong
@@ -172,8 +172,8 @@ export const ui: { [lang: string]: UiLanguage } = {
     "themeLight": "Claro",
     "themeSystem": "Sistema",
     "theme.selectLabel": "Elige el tema",
-    "layout.title": "Porfolio de Adrian - Desarrollador y Programador Web con +2 años de experiencia.",
-    "layout.description": "Contrata a adrian para crear tu aplicación web o móvil. Desarrollador Web y Creador de Contenido. Especializado en crear aplicaciones únicas.",
+    "layout.title": "Porfolio de Adrian - Desarrollador y Programador Web con +3 años de experiencia.",
+    "layout.description": "Desarrollador Fullstack de Ciudad del Este, Paraguay. Especializado en crear aplicaciones web modernas, eficientes y con enfoque en la experiencia de usuario.",
     "footer.copyright": "Casi todos los derechos reservados",
   },
   pt: {
@@ -183,7 +183,7 @@ export const ui: { [lang: string]: UiLanguage } = {
     "header.nav.contact": "Contato",
     "hero.availability": "Disponível para trabalhar",
     "hero.title": "Olá, eu sou Adrian",
-    "hero.description": "+2 anos de experiência. <strong>Desenvolvedor Fullstack</strong> De Ciudad del Este, Paraguay 🇵🇾. Especializado em criar soluções únicas.",
+    "hero.description": "+3 anos de experiência. <strong>Desenvolvedor Fullstack</strong> de Ciudad del Este, Paraguay 🇵🇾. Especializado em criar soluções únicas.",
     "hero.contactme": "Contate-me",
     "main.workExperience": "Experiência laboral",
     "main.workExperience.viewProjectButton": "Ver",
@@ -223,7 +223,7 @@ export const ui: { [lang: string]: UiLanguage } = {
         Comecei minha formação em <strong>Análise de Sistemas</strong>, mas minha verdadeira paixão pela programação surgiu durante um curso intensivo no <strong>Brasil</strong>. Foi um desafio único, eu era o único que não falava bem português em um programa totalmente ministrado em <strong>português</strong>, mas essa experiência me permitiu aprender com professores excepcionais e adquirir conhecimentos em tecnologias como <strong>Angular</strong> e <strong>.NET</strong>. Ao finalizar, fui selecionado para o meu primeiro emprego como desenvolvedor remoto.
       </p>
       <p>
-        Com mais de <strong>2 anos de experiência</strong>, trabalho no desenvolvimento <strong>frontend e fullstack</strong>, criando aplicações web com <strong>React</strong>, <strong>Angular</strong>, <strong>Nest.js</strong>, <strong>.NET</strong> e <strong>PostgreSQL</strong>. Participei de projetos diversos, desde aplicações de <strong>gamificação</strong> até sistemas de gestão empresarial. Minha experiência inclui trabalho em equipes ágeis com metodologias <strong>Scrum</strong>, e atualmente estou explorando ferramentas como <strong>Docker</strong> e <strong>inteligência artificial</strong> para melhorar meu fluxo de trabalho.
+        Com mais de <strong>3 anos de experiência</strong>, trabalho no desenvolvimento <strong>frontend e fullstack</strong>, criando aplicações web com <strong>React</strong>, <strong>Angular</strong>, <strong>Nest.js</strong>, <strong>.NET</strong> e <strong>PostgreSQL</strong>. Participei de projetos diversos, desde aplicações de <strong>gamificação</strong> até sistemas de gestão empresarial. Minha experiência inclui trabalho em equipes ágeis com metodologias <strong>Scrum</strong>, e atualmente estou explorando ferramentas como <strong>Docker</strong> e <strong>inteligência artificial</strong> para melhorar meu fluxo de trabalho.
       </p>
       <p>
         Meu foco sempre foi entregar soluções de qualidade, trabalhando de forma <strong>colaborativa</strong> para gerar valor real em cada projeto. Embora eu trabalhe com o stack completo, minha maior paixão é o <strong>frontend</strong> devido ao seu componente visual e criativo. Quando não estou programando, gosto de <strong>vôlei</strong>, geopolítica, tecnologia e <strong>videogames</strong>.
@@ -242,8 +242,8 @@ export const ui: { [lang: string]: UiLanguage } = {
     "themeLight": "Claro",
     "themeSystem": "Sistema",
     "theme.selectLabel": "Escolher tema",
-    "layout.title": "Portfólio de Adrian - Desenvolvedor Web e Programador com mais de 2 anos de experiência.",
-    "layout.description": "Contrate Adrian para criar sua aplicação web ou móvel. Desenvolvedor Web e Criador de Conteúdo. Especializado em criar aplicações únicas.",
+    "layout.title": "Portfólio de Adrian - Desenvolvedor Web e Programador com mais de 3 anos de experiência.",
+    "layout.description": "Desenvolvedor Fullstack de Ciudad del Este, Paraguai. Especializado em criar aplicações web modernas, eficientes e focadas na experiência do usuário.",
     "footer.copyright": "Quase todos os direitos reservados",
   }
 }
