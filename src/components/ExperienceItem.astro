@@ -9,7 +9,7 @@ interface Props extends Experience {}
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-const { title, company, description, link, date, project } = Astro.props;
+const { title, company, description, link, linkText, date, project } = Astro.props;
 
 const projects = project ? (Array.isArray(project) ? project : [project]) : [];
 const tags = projects
@@ -44,7 +44,7 @@ const tags = projects
   <div
     class="relative flex flex-col gap-2 pb-4 text-gray-600 dark:text-gray-300 md:col-span-3"
   >
-    {projects.length === 1 &&description}
+    {(projects.length === 0 || projects.length === 1) && description}
     {
       projects.length > 0 && (
         <div class="flex flex-col mt-4">
@@ -62,7 +62,7 @@ const tags = projects
     {
       link && (
         <LinkInline href={link}>
-          <small>{t("main.workExperience.linkTextMcde")}</small>
+          <small>{linkText}</small>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="w-5 icon icon-tabler icon-tabler-chevron-right"

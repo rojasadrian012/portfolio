@@ -1,9 +1,11 @@
 ---
+import { Image } from "astro:assets";
+import mePhoto from "@/assets/images/me.webp";
 import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 
-const personalImageAlt = "Miguel Ángel";
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+const personalImageAlt = t("main.aboutMe.imageAlt");
 ---
 
 <article
@@ -14,10 +16,11 @@ const t = useTranslations(lang);
     class="[&>p]:mb-4 [&>p>strong]:text-yellow-500 dark:[&>p>strong]:text-yellow-100 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1"
   />
 
-  <img
-    width="200"
-    height="200"
-    src="/me.webp"
+  <Image
+    width={512}
+    height={512}
+    src={mePhoto}
+    loading="lazy"
     alt={personalImageAlt}
     class="order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl bg-black/20 dark:bg-yellow-500/5 ring-1 ring-black/70 dark:ring-white/20"
     style="object-position: 50% 50%"

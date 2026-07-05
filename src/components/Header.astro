@@ -40,7 +40,7 @@ const navItems = [
       navItems.map((link) => (
         <a
           class="relative block p-2 transition hover:text-blue-500 dark:hover:text-blue-500"
-          aria-label={link.label}
+          data-section={link.label}
           href={link.url}
         >
           {link.title}
@@ -61,7 +61,7 @@ const navItems = [
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           navItems.forEach((item) => {
-            if (item.getAttribute("aria-label") == entry.target.id) {
+            if (item.getAttribute("data-section") == entry.target.id) {
               item.classList.add("text-blue-500");
             } else {
               item.classList.remove("text-blue-500");
@@ -96,7 +96,7 @@ const navItems = [
 
 <style>
   nav {
-    animation: nav-shadown 1s linear both;
+    animation: nav-shadow 1s linear both;
     animation-timeline: scroll();
     animation-range: 0 100px;
   }
@@ -105,7 +105,7 @@ const navItems = [
     @apply dark:bg-gray-800/90 bg-white/50;
   }
 
-  @keyframes nav-shadown {
+  @keyframes nav-shadow {
     0% {
       @apply dark:bg-gray-800/0 bg-white/0;
     }

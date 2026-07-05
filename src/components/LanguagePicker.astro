@@ -1,7 +1,7 @@
 ---
 import { getLangFromUrl } from "@/i18n/utils";
 import { languages } from "../i18n/ui";
-import DrownArow from "../components/icons/DrownArrow.astro";
+import DownArrow from "../components/icons/DownArrow.astro";
 import Language from "../components/icons/Language.astro";
 
 const languageFlags = {
@@ -23,7 +23,7 @@ const currentLang = getLangFromUrl(Astro.url);
     <span class="ml-0.5 mr-2 hidden md:block"
       >{languages[currentLang as keyof typeof languages]}</span
     >
-    <DrownArow />
+    <DownArrow />
   </button>
 
   <ul

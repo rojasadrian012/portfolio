@@ -1,4 +1,7 @@
 import type { AstroComponentFactory } from "astro/runtime/server/index.js";
+import type { useTranslations } from "@/i18n/utils";
+
+export type TranslateFn = ReturnType<typeof useTranslations>;
 
 export interface Tag {
     name: string;
@@ -21,6 +24,7 @@ export interface Experience {
     company: string;
     description: string;
     link?: string;
+    linkText?: string;
     date: string;
     project?: Project | Project[];
 }

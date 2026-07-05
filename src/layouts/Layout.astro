@@ -1,10 +1,13 @@
 ---
 import "@fontsource-variable/onest";
 
+import { getImage } from "astro:assets";
+import mePhoto from "@/assets/images/me.webp";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { ViewTransitions } from "astro:transitions";
 import { getLangFromUrl } from "@/i18n/utils";
+import { languages } from "@/i18n/ui";
 
 interface Props {
   title: string;
@@ -14,6 +17,11 @@ interface Props {
 const { description, title } = Astro.props;
 const lang = getLangFromUrl(Astro.url);
 const defaultLang = 'en';
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const ogImage = await getImage({ src: mePhoto, width: 1200, height: 630, fit: "cover" });
+const ogImageURL = new URL(ogImage.src, Astro.site);
+const ogLocales: Record<string, string> = { en: "en_US", es: "es_ES", pt: "pt_BR" };
 ---
 
 <!doctype html>
@@ -21,10 +29,37 @@ const defaultLang = 'en';
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Adrian Portillo" />
+    <meta name="theme-color" content="#0f172a" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+
+    <link rel="canonical" href={canonicalURL} />
+    {
+      Object.keys(languages).map((locale) => (
+        <link
+          rel="alternate"
+          hreflang={locale}
+          href={new URL(`/${locale}/`, Astro.site)}
+        />
+      ))
+    }
+    <link rel="alternate" hreflang="x-default" href={new URL("/", Astro.site)} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:image" content={ogImageURL} />
+    <meta property="og:locale" content={ogLocales[lang] ?? "en_US"} />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageURL} />
+
     <ViewTransitions />
   </head>
 

@@ -2,8 +2,16 @@
 import SunIcon from "./icons/Sun.astro";
 import MoonIcon from "./icons/Moon.astro";
 import SystemIcon from "./icons/System.astro";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
 
-const THEMES = ["Light", "Dark", "System"];
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const THEMES = [
+  { value: "light", label: t("themeLight") },
+  { value: "dark", label: t("themeDark") },
+  { value: "system", label: t("themeSystem") },
+];
 ---
 
 <div class="relative ml-2">
@@ -12,7 +20,7 @@ const THEMES = ["Light", "Dark", "System"];
     id="theme-toggle-btn"
     class="appearance-none border-none flex hover:scale-125 transition"
   >
-    <span class="sr-only">Elige el tema</span>
+    <span class="sr-only">{t("theme.selectLabel")}</span>
     <SunIcon id="light" class="theme-toggle-icon size-5 transition-all" />
     <MoonIcon
       id="dark"
@@ -30,9 +38,12 @@ const THEMES = ["Light", "Dark", "System"];
   >
     <ul>
       {
-        THEMES.map((theme) => (
-          <li class="themes-menu-option px-2 py-1.5 cursor-default hover:bg-neutral-400/40 dark:hover:bg-gray-500/50 rounded-sm">
-            {theme}
+        THEMES.map(({ value, label }) => (
+          <li
+            class="themes-menu-option px-2 py-1.5 cursor-default hover:bg-neutral-400/40 dark:hover:bg-gray-500/50 rounded-sm"
+            data-theme-value={value}
+          >
+            {label}
           </li>
         ))
       }
@@ -110,7 +121,7 @@ const THEMES = ["Light", "Dark", "System"];
 
   document.querySelectorAll(".themes-menu-option").forEach((element) => {
     element.addEventListener("click", (e) => {
-      localStorage.setItem("theme", e.target.innerText.toLowerCase().trim());
+      localStorage.setItem("theme", e.currentTarget.dataset.themeValue);
       updateTheme();
     });
   });
