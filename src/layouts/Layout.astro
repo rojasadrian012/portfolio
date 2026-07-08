@@ -1,8 +1,6 @@
 ---
 import "@fontsource-variable/onest";
 
-import { getImage } from "astro:assets";
-import mePhoto from "@/assets/images/me-icon.webp";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { ViewTransitions } from "astro:transitions";
@@ -19,9 +17,14 @@ const lang = getLangFromUrl(Astro.url);
 const defaultLang = 'en';
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const ogImage = await getImage({ src: mePhoto, width: 1200, height: 630, fit: "cover" });
-const ogImageURL = new URL(ogImage.src, Astro.site);
+// Pre-generated 1200x630 JPEG (public/og-image.jpg) instead of astro:assets'
+// getImage(): Astro 4.4.5's built-in sharp service ignores `fit`/`height`
+// when `width` is set, so it can't produce a cropped 1200x630 image.
+// Regenerate with: sharp('src/assets/images/me-icon.webp').resize(1200, 630,
+// { fit: 'cover', position: 'top' }).jpeg({ quality: 82 }).toFile('public/og-image.jpg')
+const ogImageURL = new URL("/og-image.jpg", Astro.site);
 const ogLocales: Record<string, string> = { en: "en_US", es: "es_ES", pt: "pt_BR" };
+const alternateOgLocales = Object.entries(ogLocales).filter(([locale]) => locale !== lang);
 ---
 
 <!doctype html>
@@ -53,12 +56,24 @@ const ogLocales: Record<string, string> = { en: "en_US", es: "es_ES", pt: "pt_BR
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:image" content={ogImageURL} />
+    <meta property="og:image:secure_url" content={ogImageURL} />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={title} />
+    <meta property="og:site_name" content="Adrian Portillo" />
     <meta property="og:locale" content={ogLocales[lang] ?? "en_US"} />
+    {
+      alternateOgLocales.map(([, locale]) => (
+        <meta property="og:locale:alternate" content={locale} />
+      ))
+    }
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImageURL} />
+    <meta name="twitter:image:alt" content={title} />
 
     <ViewTransitions />
   </head>
